@@ -8,19 +8,16 @@
   --primary-bttn-color: #2196F3;
 }
 
-.page {
-  /* background-color: #F5F5F5; */
+.body {
+  background-color: #F5F5F5;
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
+
 }
 
-/* Видаляємо маркери підкреслення посилань */
-ul {
-  list-style: none;
-}
-
+/* -----------------------видалення: маркери, підкреслення, посилання, відступів---------------- */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -38,23 +35,24 @@ ul {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
-/* Стилізація основного контейнеру */
+/* -----------------------Стилізація основного контейнеру----------------------- */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  /* text-align: center; */
-  /* padding-top: 94px; */
-  /* padding-bottom: 94px; */
+  padding-left: 20px;
+  padding-right: 20px;
   outline: 2px solid tomato;
 }
 
 /* Header */
+.header {}
 
-
-/* Стилізація логотипу */
+/* -----------------------Стилізація логотипу--------------------------- */
 .logo {
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 1);
@@ -69,7 +67,7 @@ ul {
   color: rgba(33, 150, 243, 1)
 }
 
-/* стилізація навігації по сайту */
+/* ---------------------стилізація навігації по сайту--------------------- */
 .site-nav {
   font-weight: 500;
   font-size: 14px;
@@ -111,7 +109,7 @@ ul {
   color: var(--focus-color);
 }
 
-/* Стилізаця Кнопки */
+/* -----------------------Стилізаця Кнопки----------------------- */
 button {
   display: inline-block;
   cursor: pointer;
@@ -119,12 +117,13 @@ button {
   text-align: center;
   border-radius: 4px;
   border: 1px solid transparent;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
-/* Секція основного банеру */
+/* -----------------------Секція основного банеру----------------------- */
 .hero {
-  
   background-color: #2F303A;
   text-align: center;
 }
@@ -135,7 +134,6 @@ button {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -146,6 +144,7 @@ button {
   background-color: #2196F3;
   padding: 10px 32px;
   min-width: 152px;
+  text-align: center;
 }
 
 .button-text {
@@ -154,11 +153,10 @@ button {
   font-size: 16px;
   line-height: 1.88;
   display: flex;
-  align-items: center;
-
+  align-items: center; 
 }
 
-/* стилізація секцій */
+/* -----------------------стилізація секцій----------------------- */
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -174,7 +172,7 @@ button {
   padding-bottom: 94px;
 }
 
-/* Секція Переваги */
+/* -----------------------Секція Переваги----------------------- */
 .features .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -190,9 +188,9 @@ button {
   line-height: 1.71;
 }
 
-/* Секція Команда */
-.section .team-bg {
-    background-color: #F5F4FA;
+/* -----------------------Секція Команда----------------------- */
+.section-team {
+  background-color: #F5F4FA;
 }
 
 .team {
@@ -217,15 +215,17 @@ button {
   color: var(--primary-text-color);
 }
 
-/* Секція Фільтр робіт, Стилізаця Кнопки */
+/* -----------------------Секція Фільтр робіт, Стилізаця Кнопки----------------------- */
 .button-filter {
+  display: inline-block;
   color: #212121;
   background: #F5F4FA;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
-
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .button-filter:hover {
@@ -234,7 +234,6 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
 .button-filter:focus {
@@ -243,10 +242,9 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
-/* Секція Приклади робіт */
+/* -----------------------Секція Приклади робіт----------------------- */
 .projects .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -258,7 +256,7 @@ button {
   color: var(--primary-text-color)
 }
 
-/* Футер */
+/* -----------------------Футер----------------------- */
 .logo-white {
   display: inline-block;
   margin-bottom: 20px;
@@ -266,7 +264,6 @@ button {
 }
 
 .footer-style {
-  
   padding-top: 60px;
   background-color: #2F303A;
 }

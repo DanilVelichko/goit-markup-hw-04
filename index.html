@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="uk">
 
-<!-- Шапка сайта -->
+<!----------------------- Шапка сайта ----------------------->
 
 <head>
   <meta charset="UTF-8">
@@ -17,16 +17,17 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="page">
-  <div class="container">
-    <!-- Header -->
-    <header>
+<body class="body">
 
+
+  <!----------------------- Header ----------------------->
+  <header class="header">
+    <div class="container">
       <nav> <a href="index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
         <ul class="site-nav">
-          <li><a href="index.html" class="link current">Студія</a></li>
-          <li><a href="portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
+          <li><a class="link current" href="index.html">Студія</a></li>
+          <li><a class="link" href="portfolio.html">Портфоліо</a></li>
+          <li><a class="link" href="">Контакти</a></li>
         </ul>
       </nav>
       <ul class="site-cont">
@@ -37,21 +38,27 @@
           <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
 
-    </header>
 
-    <!-- Main  -->
-    <main>
-      <!-- Основний банер -->
+  </header>
 
-      <section class="hero">
+  <!----------------------- Main  ----------------------->
+  <main>
+
+    <!----------------------- Основний банер ----------------------->
+    <section class="hero">
+      <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button-design button-text">Замовити послугу</button>
-      </section>
+      </div>
+
+    </section>
 
 
-      <!-- Переваги -->
-      <section class="section">
+    <!-- Переваги -->
+    <section class="section">
+      <div class="container">
         <h2 class="section-title" hidden>Переваги</h2>
         <ul class="features">
           <li>
@@ -71,20 +78,26 @@
             <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <!-- Приклади робіт -->
-      <section class="section">
+    </section>
+
+    <!----------------------- Приклади робіт ----------------------->
+    <section class="section">
+      <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul>
           <li><img src="images/imgwork1.jpg" alt="Людина працює за компютером" width="370"></li>
           <li><img src="images/imgwork2.jpg" alt="Людина працює з мобільним телефоном" width="370"></li>
           <li><img src="images/imgwork3.jpg" alt="Людина працює на планшеті" width="370"></li>
         </ul>
-      </section>
+      </div>
+  
+    </section>
 
-      <!-- Команда -->
-      <section class="section team-bg">
+    <!----------------------- Команда ----------------------->
+    <section class="section-team">
+      <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team">
           <li>
@@ -108,12 +121,15 @@
             <p class="text">UI Designer</p>
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
 
-    <!-- Футер -->
-    <footer class="footer-style">
-      <a href="index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
+    </section>
+  </main>
+
+  <!----------------------- Футер ----------------------->
+  <footer class="footer-style">
+    <div class="container"><a href="index.html" class="logo"><span class="logo-blue">Web</span><span
+          class="logo-white">Studio</span></a>
       <address>
         <ul class="footer-nav">
           <li>
@@ -128,8 +144,10 @@
           </li>
         </ul>
       </address>
-    </footer>
+  </footer>
   </div>
+
+
 </body>
 
 </html>
