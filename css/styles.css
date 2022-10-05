@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -17,6 +21,12 @@
 
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 /* -----------------------видалення: маркери, підкреслення, посилання, відступів---------------- */
 a {
   text-decoration: none;
@@ -30,13 +40,37 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   list-style: none;
   padding-left: 0;
+
+}
+
+li {
+  line-height: initial;
+}
+
+address {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* -----------------------Стилізація основного контейнеру----------------------- */
@@ -48,10 +82,7 @@ ul {
   padding-right: 15px;
 }
 
-/* ------------------------------------Хедер ---------------------------- */
-.header {
-  border-bottom: 1px solid #ECECEC;
-}
+
 
 /* -----------------------Стилізація логотипу--------------------------- */
 .logo {
@@ -68,6 +99,11 @@ ul {
   display: inline-block;
   align-items: center;
   color: rgba(33, 150, 243, 1)
+}
+
+/* ------------------------------------Хедер ---------------------------- */
+.header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header-main-container {
