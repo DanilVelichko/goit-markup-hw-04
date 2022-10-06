@@ -320,7 +320,6 @@ button {
 }
 
 .team {
-
   margin-bottom: 30px;
 }
 
@@ -345,7 +344,7 @@ button {
 .button-filter {
   display: inline-block;
   color: #212121;
-  background: #F5F4FA;
+  background: rgba(245, 244, 250, 1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -381,7 +380,7 @@ button {
 
 .filter-list.section {
   padding-bottom: 0px;
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-item {
