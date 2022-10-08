@@ -115,7 +115,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
 }
 
 .header-nav {
@@ -206,6 +206,23 @@ button {
 
 
 /* -----------------------Секція основного банеру----------------------- */
+.overlay {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/imgherooverlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(196, 196, 196, 1);
+}
+
+
 .hero {
   background-color: #2F303A;
   text-align: center;
@@ -266,13 +283,39 @@ button {
   margin-right: 30px;
 }
 
+.flex-features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: 65px 70px;
+  background-repeat: no-repeat;
+  background-color: #F5F4FA;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .flex-features-item:last-child {
   margin-right: 0;
 }
 
 .features .title {
-  margin-top: 0;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -339,6 +382,57 @@ button {
   color: var(--primary-text-color);
 }
 
+/*------------------------------ Секція Постійні клієнти ----------------------------> */
+.flex-clients {
+  display: flex;
+}
+
+.flex-clients-item {
+  display: block;
+  margin-right: 30px;
+}
+
+.flex-clients-item:last-child {
+  margin-right: 0;
+}
+
+.flex-clients-item::before {
+  display: block;
+  content: '';
+  height: 92px;
+  width: 170px;
+  background-size: 106px 60px;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-position: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.icon-logo-company::before {
+  background-image: url(../images/Logocompany.svg);
+}
+
+.icon-logo-union::before {
+  background-image: url(../images/Union.svg);
+}
+
+.icon-logo-onion::before {
+  background-image: url(../images/Logoonion.svg);
+}
+
+.icon-logo-foster::before {
+  background-image: url(../images/Logofosterpeters.svg);
+}
+
+.icon-logo-brand::before {
+  background-image: url(../images/Logobrand.svg);
+}
+
+.icon-logo-tagline::before {
+  background-image: url(../images/Logotagline.svg);
+}
+
 /* -----------------------Секція Фільтр робіт, Стилізаця Кнопки----------------------- */
 .button-filter {
   display: inline-block;
@@ -396,6 +490,7 @@ button {
 .container.section {
   padding-top: 0px;
 }
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -405,7 +500,7 @@ button {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  
+
 }
 
 .flex-element:nth-child(3n) {
@@ -419,7 +514,7 @@ button {
 .flex-element>.title {
   display: block;
   align-items: center;
- 
+
 }
 
 .flex-element>.text {
@@ -427,11 +522,13 @@ button {
   align-items: center;
 
 }
+
 .projects-item {
-padding: 20px 24px;
-border: 1px solid #EEEEEE;
-border-top: 0;
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: 0;
 }
+
 /* -----------------------Секція Приклади робіт----------------------- */
 .projects .title {
   color: var(--title-text-color);
@@ -445,6 +542,17 @@ border-top: 0;
 }
 
 /* -----------------------Футер----------------------- */
+.footer-container {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+
+}
+
+.logo-footer {
+  /* margin-right: 156px; */
+}
+
 .logo-white {
   display: inline-block;
   margin-bottom: 20px;
@@ -459,6 +567,7 @@ border-top: 0;
 .footer-nav {
   display: inline-block;
   padding-bottom: 60px;
+  margin-right: 70px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -469,6 +578,7 @@ border-top: 0;
   display: inline-block;
   margin-bottom: 9px;
   color: #FFFFFF;
+
 }
 
 .footer-nav .contact {
@@ -487,4 +597,50 @@ border-top: 0;
 
 .footer-nav .last {
   margin-bottom: 0;
+}
+
+.title-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.social-item-footer {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.icon-instagram {
+  color: #FFFFFF;
+  background-image: url(../images/instagram.svg);
+}
+
+.icon-twitter {
+  color: #FFFFFF;
+  background-image: url(../images/twitter.svg)
+}
+
+.icon-facebook {
+  color: #FFFFFF;
+  background-image: url(../images/facebook.svg)
+}
+
+.icon-linkedin {
+  color: #FFFFFF;
+  background-image: url(../images/linkedin.svg)
+}
+
+.social-item-footer:hover {
+  background-color: #2196F3;
 }
