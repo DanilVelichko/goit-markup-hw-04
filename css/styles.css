@@ -185,11 +185,58 @@ img {
 .site-cont .item {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .site-cont .item+.item {
   margin-right: 0px;
+}
+
+.flex-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-mail-logo::before {
+  display: inline-block;
+  content: '';
+  height: 12px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-position: center;
+  /* border: 1px solid #b02288; */
+
+}
+
+.flex-tel-logo::before {
+  display: inline-block;
+  content: '';
+  height: 16px;
+  width: 12px;
+  margin-left: 30px;
+  /* background-size: 16px 12px; */
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-position: center;
+  /* border: 1px solid #b02288; */
+
+}
+
+.flex-tel-logo:hover::before {
+  color: blue;
+}
+
+.link .flex-mail-logo {
+  margin-right: 30px;
+}
+
+.flex-mail-logo::before {
+  background-image: url(../images/envelope.svg);
+}
+
+.flex-tel-logo::before {
+  background-image: url(../images/telephonelogo.svg);
 }
 
 /* -----------------------Стилізаця Кнопки----------------------- */
@@ -382,7 +429,25 @@ button {
   color: var(--primary-text-color);
 }
 
+.flex-command-social-list {
+  display: flex;
+}
+
+.item-social::before {
+  display: inline-block;
+  content: '';
+  height: 44x;
+  width: 44px;
+  /* background-size: 20px 44px; */
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-position: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
 /*------------------------------ Секція Постійні клієнти ----------------------------> */
+
 .flex-clients {
   display: flex;
 }
